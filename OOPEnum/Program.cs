@@ -18,5 +18,9 @@ string txt = OrderStatus.PendingPayement.ToString();
 Console.WriteLine($"Enum to String: {txt}");
 
 //Convertendo uma String para Enum
-OrderStatus delivered = Enum.Parse<OrderStatus>("Delivered");
-Console.WriteLine($"String to Enum: {delivered}");
+//Some methods below
+//OrderStatus os = (OrderStatus)Enum.Parse(typeof(OrderStatus), "Delivered");
+//OrderStatus os;
+//Enum.TryParse("Delivered", out os);
+OrderStatus os = Enum.Parse<OrderStatus>("Delivered");
+Console.WriteLine($"String to Enum: {os}");
